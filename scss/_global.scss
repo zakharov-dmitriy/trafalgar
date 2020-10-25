@@ -1,0 +1,78 @@
+html {
+   box-sizing: border-box;
+   scroll-behavior: smooth; //плавная прокрука
+}
+*,
+*::after,
+*::before {
+   box-sizing: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+   margin: 0;
+   padding: 0;
+   font-size: inherit;
+}
+ul,
+li {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+body {
+   font-family: "Mulish", sans-serif;
+   font-weight: 300;
+   font-size: 18px;
+   line-height: 30px;
+   color: #7d7987;
+}
+a {
+   display: inline-block;
+   text-decoration: none;
+   color: inherit;
+}
+img {
+   max-width: 100%;
+   display: block;
+   height: auto;
+}
+.container {
+   max-width: 1200px;
+   width: 100%;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+.btn {
+   padding: 0 50px;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 60px;
+   border-radius: 55px;
+}
+.page {
+   overflow: hidden;
+}
+.page-section {
+   margin-bottom: 190px;
+}
+.title {
+   position: relative;
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 56px;
+   color: #000;
+   &::after {
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      right: 47%;
+      width: 56px;
+      height: 2px;
+      background-color: #000;
+   }
+}
